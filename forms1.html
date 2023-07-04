@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>FORM</title>
+    </head>
+    <body>
+     <!--From-->
+  <form>
+    <div>
+    <label>Enter FirstName</label><br>
+    <input type="text" name="firstName" placeholder="Enter First Name">
+    </div>
+    <div>Enter LastName </div>
+    <input type="text" name="lastName" placeholder="Enter Last Name">
+    <!--Email-->
+    <div>
+      <label>Enter EmailID </label><br>
+      <input type="email" name="email" placeholder="Enter Email">  
+    </div>
+    <div>
+      <label>Enter Password </label><br>
+      <input type="password" name="password" placeholder="Enter Password">
+    </div>
+    <div>
+      <label> Select Gender</label>
+      <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female
+      <input type="radio" name="gender">Others
+    </div>
+    <!--City-->
+    <div>
+      <label>Select City</label>
+      <select>
+        <option>       </option>
+        <option>Bangalore</option>
+        <option>Mysore</option>
+        <option>Hubli</option>
+        <option>Dharwad</option>
+      </select>
+    </div>
+    <div>
+      <!--date-->
+      <label> Date Of Birth</label>
+      <input type="date" name="dateOfBirth">
+    </div>
+    <div>
+      <!--select courses = JAVA , HTML , SQL
+      Types checkbox -->
+      <!--Button Tag  Add field Adress , Mobile number, upload file-->
+      <button type="submit" style="color: blue;" >Register</button>
+
+      <button type="reset" style="color: crimson;">Reset</button>
+      <!--create new github respository
+      username.github.io - public
+    github page-->
+
+    </div>
+    <div>
+      <label> Select Courses </label>
+      <input type="checkbox" name="courses">JAVA
+      <input type="checkbox" name="courses">HTML
+      <input type="checkbox" name="courses">CSS
+      <input type="checkbox" name="courses">SQL
+    </div>
+
+    <p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  
+</form>
+<form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+</form>
+<div>
+  <label>Enter Address </label><br>
+  <input type="address" name="address" placeholder="Enter Address"><br><br>
+</div>
+<input type="submit">
+  </form>
+    </body>
+</html>
