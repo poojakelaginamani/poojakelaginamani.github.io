@@ -7,24 +7,25 @@
   <form>
     <div>
     <label>Enter FirstName</label><br>
-    <input type="text" name="firstName" placeholder="Enter First Name">
+    <input type="text" name="firstName" placeholder="Enter First Name" required><br><br>
     </div>
     <div>Enter LastName </div>
-    <input type="text" name="lastName" placeholder="Enter Last Name">
+    <input type="text" name="lastName" placeholder="Enter Last Name" required><br><br>
     <!--Email-->
     <div>
       <label>Enter EmailID </label><br>
-      <input type="email" name="email" placeholder="Enter Email">  
+      <input type="email" name="email" placeholder="Enter Email" required><br><br>  
     </div>
     <div>
       <label>Enter Password </label><br>
-      <input type="password" name="password" placeholder="Enter Password">
+      <input type="password" name="password" placeholder="Enter Password" required><br><br>
     </div>
     <div>
       <label> Select Gender</label>
       <input type="radio" name="gender">Male
       <input type="radio" name="gender">Female
       <input type="radio" name="gender">Others
+      <br><br>
     </div>
     <!--City-->
     <div>
@@ -36,30 +37,29 @@
         <option>Hubli</option>
         <option>Dharwad</option>
       </select>
+      <br><br>
     </div>
     <div>
       <!--date-->
       <label> Date Of Birth</label>
-      <input type="date" name="dateOfBirth">
+      <input type="date" name="dateOfBirth"><br><br>
     </div>
-    <div>
+    
       <!--select courses = JAVA , HTML , SQL
       Types checkbox -->
       <!--Button Tag  Add field Adress , Mobile number, upload file-->
-      <button type="submit" style="color: blue;" >Register</button>
 
-      <button type="reset" style="color: crimson;">Reset</button>
       <!--create new github respository
       username.github.io - public
     github page-->
 
-    </div>
+    
     <div>
       <label> Select Courses </label>
-      <input type="checkbox" name="courses">JAVA
-      <input type="checkbox" name="courses">HTML
-      <input type="checkbox" name="courses">CSS
-      <input type="checkbox" name="courses">SQL
+      <input type="checkbox" >JAVA
+      <input type="checkbox" >HTML
+      <input type="checkbox" >CSS
+      <input type="checkbox" >SQL
     </div>
 
     <p>Click on the "Choose File" button to upload a file:</p>
@@ -72,11 +72,97 @@
   <label for="phone">Enter a phone number:</label><br><br>
   <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
 </form>
+<br>
 <div>
-  <label>Enter Address </label><br>
-  <input type="address" name="address" placeholder="Enter Address"><br><br>
+
+  <label>Enter Address </label>
+ <textarea rows="4" cols="5"></textarea required>
 </div>
-<input type="submit">
+
+
+<!--Age-->
+<br><br>
+<div>
+  <label> Enter Age </label>
+  <input type="number" name="age"
+  min="0" max="50">
+<br><br>
+</div>
+<div>
+<button type="submit" style="color: blue;" >Register</button>
+
+<button type="reset" style="color: crimson;">Reset</button>
+</div>
+
+<!--Verfication -->
   </form>
     </body>
+</html>
+<br><br><br>
+<html>
+<table>
+  <tr>
+    <th> Enter FirstName </th>
+    <td><input type="text" name="firstName" placeholder="firstName" required minlength="4"></td>
+  </tr>
+  <tr>
+    <th> Enter LastName</th>
+    <td><input type="text" name="lastName" placeholder="lastName" required minlength="10" ></td>
+     </tr>
+     <tr>
+      <th>Enter EmailID</th>
+      <td ><input type="text" name="email" placeholder="emailid" required ></td>
+     </tr>
+     <th>Enter Password</th>
+     <td ><input type="text" name="password" placeholder="password" required minlength="8"></td>
+    </tr>
+    <th>Enter Adress </th>
+    <td ><textarea cols="30" rows="10" required></textarea></td>
+   </tr>
+   <th>Enter Date Of Birth</th>
+   <td ><input type="date" name="dateOfBirth" placeholder="dateOfBirth" required></td>
+  </tr>
+  <tr>
+  <th> Select City </th>
+  <td><select>
+    <option>       </option>
+    <option>Bangalore</option>
+    <option>Mysore</option>
+    <option>Hubli</option>
+    <option>Dharwad</option>
+  </select></td>
+</tr>
+<tr>
+  <th>Select Gender</th>
+  <td><input type="radio" name="gender">Male 
+  <input type="radio" name="gender">Female
+  <input type="radio" name="gender">Others</td>
+</tr>
+ <tr>
+  <th> Enter Age</th>
+  <td><input type="number" name="age"
+    min="0" max="50"></td>
+ </tr>
+ <tr>
+  <th> Enter PhoneNumber </th>
+  <td><input type="tel" id="phone" name="phone"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></td>
+ </tr>
+ <tr>
+  <th> Upload File</th>
+  <td><input type="file" id="file" name="filename"></td>
+ </tr>
+ <tr>
+  <th> Select Skills </th>
+  <td><input type="checkbox" >JAVA
+    <input type="checkbox" >HTML
+    <input type="checkbox" >CSS
+    <input type="checkbox" >SQL</td>
+ </tr>
+ <tr>
+  <th>
+    <td><button type="submit" style="color:whitesmoke; background-color: black;" >Register</button></td>
+    <td><button type="reset" style="color:whitesmoke; background-color: black;">Reset</button></td>
+  </th>
+ </tr>
+</table>
 </html>
