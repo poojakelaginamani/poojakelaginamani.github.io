@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+
+}
+ul{
+    list-style-type: none;
+    /*background-color:rgb(24, 23, 23);*/
+    background-color: #7d997d;
+}
+li{
+    padding: 10px;
+    color:black;
+
+}
+#right{       
+    float: right;
+}
+li:hover{
+    background-color: blue;
+
+}
+.mouseOver:hover{
+    background-color: aquamarine;
+}
